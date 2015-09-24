@@ -26,6 +26,7 @@ public class Factor {
 		}
 		return temp;
 	}
+	
 }
 /**
  * 19 : 만약 dest 가 6이면 count 는 4 일것이고,
