@@ -19,7 +19,7 @@ public class HanbitBank {
 		case 1:
 			String name = "";
 			int money2 = 0;
-			System.out.println(service.deposit(name, money));
+		//	System.out.println(service.deposit(name, money));
 			break;
 
 		default:

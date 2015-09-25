@@ -6,14 +6,14 @@ package polymorphism;
  * @date : 2015. 9. 23.
  * @story : 통장 개설 프로그램
  */
+
 public class Account {
-    protected int accountNo; // 계좌번호
+
+	protected int accountNo; // 계좌번호
     protected String ownerName; // 계좌주인
     private String password; // 통장비번
     protected int restMoney; // 잔액
     protected static final String BANK_NAME = "한빛뱅크";
-	
-	
 	/**
 	 * 생성자를 만드시오.
 	 * 단, 통장을 만듦과 동시에
@@ -22,22 +22,44 @@ public class Account {
 	 * 계좌주인의 이름은 새겨지며
 	 * 비번도 설정합니다.
 	 * 다만, 잔액은 통장이 만들어진 이후에 입금이 되겠지요
+	 * toString, 계좌생성.
+	 * 
 	 */
-	public void deposit() {
-		
+    public Account() {
+    	this.accountNo = (int) ((Math.random() * 999999) + 100000);
 	}
-	public void withdraw(){
-		
+
+	public int getAccountNo() {
+		return accountNo;
+	}
+	public String getOwnerName() {
+		return ownerName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public int getRestMoney() {
+		return restMoney;
+	}
+	public void setAccountNo(int accountNo) {
+		this.accountNo = accountNo;
+	}
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public void setRestMoney(int restMoney) {
+		this.restMoney = restMoney;
+	}
+
+	@Override
+	public String toString() {
+		return "[" + BANK_NAME + "]\n" + "+입출금 계좌\n" // 입출금 계좌에 한빛은행 이름 붙어서 나오게
+														// 하기
+				+ "계좌번호 :" + "\n" + "계좌주 :" + "\n" + "비번 : " + // 블락처리하는법은?
+				"잔액:" + "으로 통장이 개설되었습니다";
 	}
 	
-	 @Override
-	    public String toString() {
-	        return "입출금 계좌\n"
-	                + "[ "+BANK_NAME+ "]\n"
-	                + "계좌번호 :" + "???"+"\n"
-	                + "계좌명 :" + "???"+"\n"
-	                + "비번 : ********* \n"
-	                + "잔액 :"+"???"+"\n"
-	                + "으로 통장이 개설되었습니다.";
-	    }
 }
