@@ -1,4 +1,4 @@
-package polymorphism;
+package bank;
 
 public interface Bank {
 	

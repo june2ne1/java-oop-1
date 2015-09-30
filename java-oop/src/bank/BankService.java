@@ -1,4 +1,4 @@
-package polymorphism;
+package bank;
 
 import java.util.Scanner;
 

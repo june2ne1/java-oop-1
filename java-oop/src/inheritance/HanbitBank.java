@@ -2,8 +2,8 @@ package inheritance;
 
 import java.util.Scanner;
 
+import bank.BankService;
 import encapsule.Kaup;
-import polymorphism.BankService;
 
 public class HanbitBank {
 	public static void main(String[] args) {

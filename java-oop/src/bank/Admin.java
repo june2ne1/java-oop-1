@@ -1,9 +1,9 @@
-package polymorphism;
+package bank;
 
 public interface Admin {
 	// 계좌를 개설하는데 관리자 입장에서 개설해 주는 로직
 	// 사용자입장에서 입력한 데이터를 받아서 계좌를 개설해 준다
-	public String openAccount(int accountNo, String name, int restMoney);
+	public String openAccount(int accountNo, String name, String password, int restMoney);
 	
 	// 계좌번호로 특정계좌가 존재하는지 체크하고
 	// 존재한다면 계좌정보를 호출하는 기능
@@ -19,4 +19,5 @@ public interface Admin {
 	public String closeAccount(int accountNo);
 	// 전체 계좌수
 	public int countAll();
+
 }
