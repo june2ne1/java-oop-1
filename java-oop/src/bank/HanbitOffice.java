@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class HanbitOffice {
 	public static void main(String[] args) {
-		AdminService service = new AdminService(1000);
+		Admin service = new AdminService(1000);
+		// 인터페이스 객체 = new 인터페이스를 구현한클래스생성자
 		Account account = new Account();
 		Scanner scanner = new Scanner(System.in);
-		
 		
 		while (true) {
 			System.out.println("관리자화면 : 1.계좌개설 2.검색(계좌번호) 3.검색(이름) 4.총계좌수 5.해지 6.종료");
